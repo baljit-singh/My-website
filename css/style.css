@@ -1,0 +1,252 @@
+ /*navbar*/
+     .navbar-brand{
+              font-weight: bold;
+              font-size: 210%;
+              font-family: Papyrus;
+          }
+
+     .glyphicon-home{
+              padding-right: 5px;
+          }
+
+    .effect:hover {
+          border-bottom: 1px solid gainsboro;
+          }
+
+
+          .divStyle{
+              color: white;
+              font-family: "Century Gothic";
+              font-size: 120%;
+              margin-right: 30px;
+          }
+
+           .navbar-fixed-top { background-color: rgba(255,255,255,0);transition: background-color 1s ease 0.1s;}
+           .opaque { background-color: rgba(0,0,0,1);transition: background-color 1s ease 0.1s;}
+
+    /*topcontainer*/
+
+     #topContainer{
+              background-image: url("nature.jpg");
+              background-size: cover;
+          }
+
+          .contentContainer{
+              background-attachment: fixed;
+          }
+
+          #topImg{
+              background: rgba(0, 0, 0, 0.4);
+
+          }
+
+          #topRow {
+              margin-top: 100px;
+              text-align: center;
+              color: #9d9d9d;
+              font-family: Calibri;
+
+          }
+
+          .size{
+              font-size: 500%;
+              font-family: "Candara";
+              color: white;
+              letter-spacing:16px;
+              padding-top: 150px;
+          }
+
+           .size1{
+              font-size: 120%;
+              font-family: "Calibri Light";
+              color: white;
+              letter-spacing: 8px;
+              padding-top: 5px;
+              text-align: center;
+          }
+
+    /*midContainer*/
+
+    .setUp{
+              font-size: 430%;
+              font-family: Candara;
+              text-align: center;
+              padding-top: 10px;;
+          }
+
+     .circle{
+              height:180px;
+              width:180px;
+              border-radius: 90px;
+              margin:0 auto;
+              position: relative;
+              top: 80px;
+
+          }
+
+          #firstBorder{
+              background-color: #334959;
+
+          }
+
+           #secondBorder{
+              background-color: #509B9E;
+
+          }
+
+            #thirdBorder{
+              background-color: #F28C83;
+
+          }
+
+    .textAlignment{
+              margin-top: 150px;
+              text-align: center;
+              font-family: "Candara";
+              font-weight: bold;
+          }
+
+        #wContainer{
+            background-color: gainsboro;
+        }
+
+          #midContainer{
+              background-color: gainsboro;
+          }
+
+      .center{
+              text-align: center;
+          }
+
+     .firstIcon{
+                padding-left: 50px;
+                padding-top: 65px;
+                font-size:550%;
+                color: white;
+            }
+
+            .positionIcon{
+                padding-left: 50px;
+                padding-top: 65px;
+                font-size:550%;
+                color: white;
+            }
+
+            #containerColor{
+                background-color: gainsboro;
+            }
+
+    /*bottomContainer*/
+
+    #bottomContainer{
+
+              background-color: #1F2C37;
+              font-family: "Candara";
+              font-size: 20px;
+          }
+
+     .marginTop{
+              margin-top: 40px;
+              color: whitesmoke;
+              font-size: 200%;
+          }
+
+     .bottomMargin{
+              margin-bottom: 60px;
+          }
+
+    .img-responsive{
+
+                max-width: 60%;
+                height: auto;
+            }
+    .imgSize{
+              padding-top: 60px;
+              margin: 0 auto;
+              transform: rotate(-7deg);
+
+          }
+
+    .bioAlign{
+              margin-top: 60px;
+              color: whitesmoke;
+              font-family: "Century Gothic";
+              font-size: 40px;
+
+          }
+
+          .bioColor{
+              color: whitesmoke;
+              font-family: "Century Gothic";
+              padding-top: 10px;
+              font-size: 17px;
+          }
+
+    /*footer*/
+
+     #firstFooter{
+
+              background-color: #509B9E;
+          }
+
+     .copyright{
+              color: whitesmoke;
+              padding-top: 30px;
+          }
+    .social i {
+        width: 100px;
+        color: #FFF;
+        font-size: 24px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        padding-bottom: 8px;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -webkit-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #909AA0;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+#btnFacebook:hover{
+    color: #3B579D;
+}
+
+#btnTwitter:hover{
+ color:#5EA9DD;
+}
+
+#btnLinkedin:hover{
+    color:#0177B5;
+
+}
+
+#btnInstagram:hover{
+    color:#885A3D;
+}
+          .social {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 3px;
+    list-style: none outside none;
+    display: inline-block;
+}
