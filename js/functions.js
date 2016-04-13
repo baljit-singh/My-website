@@ -8,10 +8,8 @@
  * Created by home on 4/10/2016.
  */
 
-      var height= $(window).height();
+       var height= $(window).height()
        $(".contentContainer").css("min-height",height);
-//       $(".parallax-container").css("min-height",height);
-         $("#topImg").css("min-height",height);
 
      $(window).scroll(function() {
     if($(this).scrollTop() > 600) {
@@ -21,17 +19,39 @@
     }
 });
 
-       $(window).scroll(function() {
-    if($(this).scrollTop() > 200) {
+
+      $(window).scroll(function(){
+          var wScroll = $(this).scrollTop();
+          $('#topImg').css({
+              'transform': 'translate(0px,'+wScroll/12 +'%)'
+          });
+          if (wScroll > $('#wContainer').offset().top - height/2) {
+              $('.figure').each(function (i) {
+                  setTimeout(function () {
+                      $('.figure').eq(i).addClass('isShowing');
+                  }, 150 * (i + 1));
+
+              });
+          }
+               if (wScroll > $('#bottomContainer').offset().top - 400) {
+                   //console.log('hi');
+                   $('.figure1').each(function (i) {
+                       setTimeout(function () {
+                           $('.figure1').eq(i).addClass('isShowing1');
+                           $('.figure2').eq(i).addClass('isShowing1');
+                       }, 150 * (i + 1));
+
+                   });
+               }
+
+           if(wScroll > 600) {
         $('.fadingAppearance').fadeOut("slow");
     } else {
         $('.fadingAppearance').fadeIn("slow");
     }
-});
+      });
 
-
-
-      $(".navbar-nav li a[href^='#']").on('click', function(e) {
+   $(".navbar-nav li a[href^='#']").on('click', function(e) {
    // prevent default anchor click behavior
    e.preventDefault();
 
@@ -49,3 +69,4 @@
      });
 
 });
+

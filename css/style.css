@@ -29,6 +29,7 @@
      #topContainer{
               background-image: url("nature.jpg");
               background-size: cover;
+              overflow: hidden;
           }
 
           .contentContainer{
@@ -36,6 +37,7 @@
           }
 
           #topImg{
+              height:800px;
               background: rgba(0, 0, 0, 0.4);
 
           }
@@ -136,6 +138,17 @@
                 background-color: gainsboro;
             }
 
+            .figure{
+                opacity: 0;
+                transform: translateX(-40px);
+                transition: 0.5s ease-in-out;
+            }
+
+            .isShowing{
+                opacity: 1;
+                transform: translate(0px);
+            }
+
     /*bottomContainer*/
 
     #bottomContainer{
@@ -181,6 +194,25 @@
               padding-top: 10px;
               font-size: 17px;
           }
+
+            .figure1{
+                opacity: 0;
+                transform: translateX(-40px);
+                transition: 0.5s ease-in-out;
+            }
+
+             .figure2{
+                opacity: 0;
+                transform: translateX(40px);
+                transition: 0.5s ease-in-out;
+            }
+
+             .isShowing1{
+                opacity: 1;
+                transform: translate(0px);
+            }
+
+
 
     /*footer*/
 
