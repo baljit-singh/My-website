@@ -30,6 +30,8 @@
               background-image: url("nature.jpg");
               background-size: cover;
               overflow: hidden;
+              position: relative;
+              z-index: 3;
           }
 
           .contentContainer{
@@ -110,6 +112,8 @@
 
         #wContainer{
             background-color: gainsboro;
+            position: relative;
+            z-index: 2;
         }
 
           #midContainer{
@@ -156,6 +160,9 @@
               background-color: #1F2C37;
               font-family: "Candara";
               font-size: 20px;
+              position: relative;
+              z-index: 1;
+              margin-bottom: 100px;
           }
 
      .marginTop{
@@ -216,40 +223,81 @@
 
     /*footer*/
 
-     #firstFooter{
-
-              background-color: #509B9E;
+          .footer{
+              height:100px;
+              background-color: black;
+              position:fixed;
+              bottom:0;
+              width:100%;
           }
 
-     .copyright{
+          .social li{
+              display: inline;
+              list-style: none;
+              padding:20px;
+          }
+
+          .social li a{
+              color: grey;
+          }
+
+          .social li a:hover{
+              text-decoration: none;
+          }
+
+          .listPos{
+              padding-top: 20px;
+          }
+
+          .follow{
               color: whitesmoke;
-              padding-top: 30px;
+              font-weight: bold;
+              font-family: "Century Gothic";
           }
-    .social i {
-        width: 100px;
-        color: #FFF;
-        font-size: 24px;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        padding-bottom: 8px;
-        -webkit-border-radius: 50%;
-        -o-border-radius: 50%;
-        transition: all ease 0.3s;
-        -moz-transition: all ease 0.3s;
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
-        -ms-transition: all ease 0.3s;
-}
 
-.social i:hover {
-    color: #909AA0;
-    text-decoration: none;
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-}
+          .cSize{
+              font-size: 80%;
+              margin-top:25px;
+              color: whitesmoke;
+              font-family: "Century Gothic";
+          }
+
+
+
+     /*#firstFooter{*/
+
+              /*background-color: #509B9E;*/
+          /*}*/
+
+     /*.copyright{*/
+              /*color: whitesmoke;*/
+              /*padding-top: 30px;*/
+          /*}*/
+    /*.social i {*/
+        /*width: 100px;*/
+        /*color: #FFF;*/
+        /*font-size: 24px;*/
+        /*border-radius: 50%;*/
+        /*-moz-border-radius: 50%;*/
+        /*padding-bottom: 8px;*/
+        /*-webkit-border-radius: 50%;*/
+        /*-o-border-radius: 50%;*/
+        /*transition: all ease 0.3s;*/
+        /*-moz-transition: all ease 0.3s;*/
+        /*-webkit-transition: all ease 0.3s;*/
+        /*-o-transition: all ease 0.3s;*/
+        /*-ms-transition: all ease 0.3s;*/
+/*}*/
+
+/*.social i:hover {*/
+    /*color: #909AA0;*/
+    /*text-decoration: none;*/
+    /*transition: all ease 0.3s;*/
+    /*-moz-transition: all ease 0.3s;*/
+    /*-webkit-transition: all ease 0.3s;*/
+    /*-o-transition: all ease 0.3s;*/
+    /*-ms-transition: all ease 0.3s;*/
+/*}*/
 
 #btnFacebook:hover{
     color: #3B579D;
@@ -260,25 +308,33 @@
 }
 
 #btnLinkedin:hover{
-    color:#0177B5;
+    color:white;
 
 }
 
-#btnInstagram:hover{
-    color:#885A3D;
-}
-          .social {
-    margin: 0;
-    padding: 0;
-}
+#btnGithub:hover{
+    color:white;
 
-.social ul {
-    margin: 0;
-    padding: 5px;
 }
+#btnGoogle:hover{
+    color:#DC493C;
 
-.social ul li {
-    margin: 3px;
-    list-style: none outside none;
-    display: inline-block;
 }
+/*#btnInstagram:hover{*/
+    /*color:#885A3D;*/
+/*}*/
+          /*.social {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.social ul {*/
+    /*margin: 0;*/
+    /*padding: 5px;*/
+/*}*/
+
+/*.social ul li {*/
+    /*margin: 3px;*/
+    /*list-style: none outside none;*/
+    /*display: inline-block;*/
+/*}*/
