@@ -19,8 +19,7 @@
     //     $('.navbar').addClass('navbar-inverse');
     //}
     else {
-        //$('.navbar').removeClass('navbar-inverse');
-        resize();
+        $('.navbar').removeClass('navbar-inverse');
     }
 
 });
