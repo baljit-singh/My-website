@@ -3,6 +3,7 @@
               font-weight: bold;
               font-size: 210%;
               font-family: Papyrus;
+              color: white;
           }
 
      .glyphicon-home{
@@ -299,15 +300,3 @@
     color:#DC493C;
 
 }
-
-/*#btnFacebook{*/
-    /*height:24px;*/
-    /*width:24px;*/
-    /*border-radius: 12px;*/
-    /*background-color: grey;*/
-
-/*}*/
-
-/*.imgPos{*/
-    /*padding-right:10px;*/
-/*}*/
