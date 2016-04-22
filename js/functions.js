@@ -13,9 +13,9 @@
 
      $(window).scroll(function() {
     if($(this).scrollTop() > 600) {
-        $('.navbar-fixed-top').addClass('opaque');
+        $('.navbar').addClass('navbar-inverse');
     } else {
-        $('.navbar-fixed-top').removeClass('opaque');
+        $('.navbar').removeClass('navbar-inverse');
     }
 });
 
