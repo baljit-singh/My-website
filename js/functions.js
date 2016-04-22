@@ -19,7 +19,8 @@
     //     $('.navbar').addClass('navbar-inverse');
     //}
     else {
-        $('.navbar').removeClass('navbar-inverse');
+        //$('.navbar').removeClass('navbar-inverse');
+        resize();
     }
 
 });
@@ -27,12 +28,12 @@
 
 $(window).resize(function(){
     //var windowWidth = $(window).width();
-   if(($(window).width() < 760 ) && ($(window).scrollTop() < 600)){
+   if($(window).width() < 760 ){
     $('.navbar').addClass('navbar-inverse');
     }
-   else if(($(window).width() < 760 ) && ($(window).scrollTop > 600)){
-      $('.navbar').addClass('navbar-inverse');
-   }
+   //else if(($(window).width() < 760 ) && ($(window).scrollTop > 600)){
+   //   $('.navbar').addClass('navbar-inverse');
+   //}
     else{
         $('.navbar').removeClass('navbar-inverse');
    }
