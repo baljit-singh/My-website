@@ -9,10 +9,6 @@
               padding-right: 5px;
           }
 
-    .effect:hover {
-          border-bottom: 1px solid gainsboro;
-          }
-
 
           .divStyle{
               color: white;
@@ -21,8 +17,27 @@
               margin-right: 30px;
           }
 
-           .navbar-fixed-top { background-color: rgba(255,255,255,0);transition: background-color 1s ease 0.1s;}
-           .opaque { background-color: rgba(0,0,0,1);transition: background-color 1s ease 0.1s;}
+
+            .navbar-inverse{
+                transition: 1s ease 0.1s;
+            }
+
+            .navbar{
+                transition:1s ease 0.1s;
+            }
+
+            .navbar-nav > li > a:hover{
+                background: none;
+                color:gainsboro;
+
+
+            }
+
+            .navbarStyle{
+                background: black;
+            }
+
+
 
     /*topcontainer*/
 
@@ -75,7 +90,7 @@
               font-size: 430%;
               font-family: Candara;
               text-align: center;
-              padding-top: 10px;;
+              padding-top: 20px;;
           }
 
      .circle{
@@ -111,13 +126,13 @@
           }
 
         #wContainer{
-            background-color: gainsboro;
+            background-color: white;
             position: relative;
             z-index: 2;
         }
 
           #midContainer{
-              background-color: gainsboro;
+              background-color: white;
           }
 
       .center{
@@ -166,7 +181,7 @@
           }
 
      .marginTop{
-              margin-top: 40px;
+              margin-top: 50px;
               color: whitesmoke;
               font-size: 200%;
           }
@@ -284,3 +299,15 @@
     color:#DC493C;
 
 }
+
+/*#btnFacebook{*/
+    /*height:24px;*/
+    /*width:24px;*/
+    /*border-radius: 12px;*/
+    /*background-color: grey;*/
+
+/*}*/
+
+/*.imgPos{*/
+    /*padding-right:10px;*/
+/*}*/

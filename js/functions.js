@@ -12,12 +12,76 @@
        $(".contentContainer").css("min-height",height);
 
      $(window).scroll(function() {
-    if($(this).scrollTop() > 600) {
-        $('.navbar-fixed-top').addClass('opaque');
-    } else {
-        $('.navbar-fixed-top').removeClass('opaque');
+    if($(this).scrollTop() > 600){
+        $('.navbar').addClass('navbar-inverse');
     }
+    //else if(($(this).scrollTop() < 600) && (($(window).width() < 760))){
+    //     $('.navbar').addClass('navbar-inverse');
+    //}
+    else {
+        $('.navbar').removeClass('navbar-inverse');
+    }
+
 });
+
+
+$(window).resize(function(){
+    //var windowWidth = $(window).width();
+   if(($(window).width() < 760 ) && ($(window).scrollTop() < 600)){
+    $('.navbar').addClass('navbar-inverse');
+    }
+   else if(($(window).width() < 760 ) && ($(window).scrollTop > 600)){
+      $('.navbar').addClass('navbar-inverse');
+   }
+    else{
+        $('.navbar').removeClass('navbar-inverse');
+   }
+
+});
+
+//var eventFired = 0;
+//
+//if ($(window).width() < 760) {
+//     $('.navbar').addClass('navbar-inverse');
+//
+//}
+//else {
+//    $('.navbar').removeClass('navbar-inverse');
+//    eventFired = 1;
+//}
+//
+//$(window).on('resize', function() {
+//    if (!eventFired) {
+//        if ($(window).width() < 760) {
+//            $('.navbar').addClass('navbar-inverse');
+//        } else {
+//            $('.navbar').removeClass('navbar-inverse');
+//        }
+//    }
+//});
+
+//$(document).ready(function() {
+//    // Optimalisation: Store the references outside the event handler:
+//    var $window = $(window);
+//    var $pane = $('#pane1');
+//
+//    function checkWidth() {
+//        var windowsize = $window.width();
+//        if (windowsize < 760) {
+//            //if the window is greater than 440px wide then turn on jScrollPane..
+//            $('.navbar').addClass('navbar-inverse');
+//    } else {
+//        $('.navbar').removeClass('navbar-inverse');
+//            }
+//
+//    }
+//    // Execute on load
+//    checkWidth();
+//    // Bind event listener
+//    $(window).resize(checkWidth);
+//});
+
+
 
 
       $(window).scroll(function(){
